@@ -1,3 +1,0 @@
-[submodule "splitMultiAllelic/jvarkit"]
-	path = splitMultiAllelic/jvarkit
-	url = https://github.com/lindenb/jvarkit.git
