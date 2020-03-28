@@ -7,7 +7,7 @@ ml sratoolkit
 mkdir -p ../../rawdata/fastq
 
 SRR_ID=$(sed -n "${SLURM_ARRAY_TASK_ID}p" listOfBrainATAC.args)
-SRA="/scratch/jclab/sathvik/sathvik/tmp/sra/${SRR}.sra"
+SRA="/scratch/jclab/sathvik/sathvik/tmp/sra/${SRR_ID}.sra"
 echo '/repository/user/main/public/root = "/scratch/jclab/sathvik/sathvik/tmp"' > ~/.ncbi/user-settings.mkfg
 
 prefetch ${SRR_ID}
