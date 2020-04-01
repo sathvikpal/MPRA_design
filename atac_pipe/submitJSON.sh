@@ -1,8 +1,9 @@
-tmpfile=$(mktemp /tmp/json.XXXXXX)
-exec 3>"$tmpfile"
+#!/bin/bash
+tmpfile=$(mktemp)
+
 r1="../../rawdata/fastq/${1}_1.fastq.gz"
 r2="../../rawdata/fastq/${1}_2.fastq.gz"
-mkdir -p "../../data/atac_ouput/${1}"
+mkdir -p "../../data/atac_output/${1}"
 
 echo '{
     "atac.title" : "'$1'",
@@ -27,4 +28,4 @@ echo '{
 cd "../../data/atac_ouput/${1}"
 conda activate encode-atac-seq-pipeline 
 sbatch -J "${1}" --export=ALL --mem 3G -t 4-0 --wrap "caper run ~/atac-seq-pipeline/atac.wdl -i '${tmpfile}'"
-rm "$tmpfile"
+rm ${tmpfile}
