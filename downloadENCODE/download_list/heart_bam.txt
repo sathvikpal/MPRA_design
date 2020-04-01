@@ -1,0 +1,23 @@
+https://www.encodeproject.org/metadata/?type=Experiment&files.output_type=alignments&files.file_type=bam&files.assembly=GRCh38&files.status=released -X GET -H "Accept: text/tsv" -H "Content-Type: application/json" --data '{"elements": ["/experiments/ENCSR000EJQ/","/experiments/ENCSR533VAF/","/experiments/ENCSR311LLZ/","/experiments/ENCSR536NGW/","/experiments/ENCSR305UJX/","/experiments/ENCSR189YJQ/","/experiments/ENCSR064GBK/","/experiments/ENCSR366EGE/","/experiments/ENCSR174JMM/","/experiments/ENCSR911LTI/","/experiments/ENCSR392GCE/","/experiments/ENCSR154ZNQ/","/experiments/ENCSR914DOH/","/experiments/ENCSR320PGJ/","/experiments/ENCSR664PKM/","/experiments/ENCSR749BWV/","/experiments/ENCSR705CNJ/","/experiments/ENCSR804RSI/"]}'
+https://www.encodeproject.org/files/ENCFF021QCV/@@download/ENCFF021QCV.bam
+https://www.encodeproject.org/files/ENCFF442IPX/@@download/ENCFF442IPX.bam
+https://www.encodeproject.org/files/ENCFF102CCA/@@download/ENCFF102CCA.bam
+https://www.encodeproject.org/files/ENCFF972PHY/@@download/ENCFF972PHY.bam
+https://www.encodeproject.org/files/ENCFF187STF/@@download/ENCFF187STF.bam
+https://www.encodeproject.org/files/ENCFF926JRS/@@download/ENCFF926JRS.bam
+https://www.encodeproject.org/files/ENCFF450FXC/@@download/ENCFF450FXC.bam
+https://www.encodeproject.org/files/ENCFF837QAV/@@download/ENCFF837QAV.bam
+https://www.encodeproject.org/files/ENCFF234FKG/@@download/ENCFF234FKG.bam
+https://www.encodeproject.org/files/ENCFF231TEJ/@@download/ENCFF231TEJ.bam
+https://www.encodeproject.org/files/ENCFF486AQD/@@download/ENCFF486AQD.bam
+https://www.encodeproject.org/files/ENCFF022BIA/@@download/ENCFF022BIA.bam
+https://www.encodeproject.org/files/ENCFF626HEO/@@download/ENCFF626HEO.bam
+https://www.encodeproject.org/files/ENCFF878MWN/@@download/ENCFF878MWN.bam
+https://www.encodeproject.org/files/ENCFF685GEJ/@@download/ENCFF685GEJ.bam
+https://www.encodeproject.org/files/ENCFF111ABS/@@download/ENCFF111ABS.bam
+https://www.encodeproject.org/files/ENCFF651CGY/@@download/ENCFF651CGY.bam
+https://www.encodeproject.org/files/ENCFF332GEX/@@download/ENCFF332GEX.bam
+https://www.encodeproject.org/files/ENCFF072KAW/@@download/ENCFF072KAW.bam
+https://www.encodeproject.org/files/ENCFF379QIL/@@download/ENCFF379QIL.bam
+https://www.encodeproject.org/files/ENCFF088HYN/@@download/ENCFF088HYN.bam
+https://www.encodeproject.org/files/ENCFF679YLR/@@download/ENCFF679YLR.bam
