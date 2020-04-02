@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 #SBATCH --mem 4GB
 #SBATCH -t 6:00:00
-#SBATCH --array=
+#SBATCH --array=1
 
-bash downloadENCODE.sh $(sed -n "${SLURM_ARRAY_TASK_ID}p" downloadENCODE.args)
+conda init bash
+conda activate encode-atac-seq-pipeline 
+
+bash submitJSON.sh $(sed -n "${SLURM_ARRAY_TASK_ID}p" submitJSON.args)
