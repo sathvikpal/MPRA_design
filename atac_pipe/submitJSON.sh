@@ -1,10 +1,11 @@
 #!/bin/bash
-tmpfile="$(mktemp)"
 
 mkdir -p "../../data/atac_output/${1}"
+touch ../../data/atac_output/${1}/${1}.json
 
-r1=`cd ../../rawdata/fastq/${1}_1.fastq.gz; pwd`
-r2=`cd ../../rawdata/fastq/${1}_2.fastq.gz; pwd`
+r1=`readlink -f ../../rawdata/fastq/${1}_1.fastq.gz;`
+r2=`readlink -f ../../rawdata/fastq/${1}_2.fastq.gz;`
+json=`readlink -f ../../data/atac_output/${1}/${1}.json;`
 
 echo '{
     "atac.title" : "'$1'",
@@ -14,7 +15,7 @@ echo '{
     "atac.align_only" : false,
     "atac.true_rep_only" : false,
 
-    "atac.genome_tsv" : "/scratch/jclab/sathvik/sathvik/SNP_LDs/data/hg19/hg19.tsv",
+    "atac.genome_tsv" : "/scratch/jclab/sathvik/sathvik/MPRA_design/rawdata/genomes/hg19/hg19.tsv",
 
     "atac.paired_end" : true,
 
@@ -24,12 +25,8 @@ echo '{
     "atac.auto_detect_adapter" : true,
 
     "atac.multimapping" : 4
-}' > ${tmpfile}
+}' > "../../data/atac_output/${1}/${1}.json"
 
 cd "../../data/atac_output/${1}"
 
-conda init bash
-conda activate encode-atac-seq-pipeline
-
-caper run ~/atac-seq-pipeline/atac.wdl -i ${tmpfile}
-rm ${tmpfile}
+caper run ~/atac-seq-pipeline/atac.wdl -i ${json}
