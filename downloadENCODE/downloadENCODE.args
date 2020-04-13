@@ -1,3 +1,4 @@
 ../../code/downloadENCODE/download_list/heart_bam.txt	../../rawdata/encode_bam/heart
 ../../code/downloadENCODE/download_list/brain_bam.txt	../../rawdata/encode_bam/brain
 ../../code/downloadENCODE/download_list/other_tissues_bam.txt	../../rawdata/encode_bam/other_tissues
+../../code/downloadENCODE/download_list/all_bam_tissues.txt	../../rawdata/encode_bam/all_bam_tissues
